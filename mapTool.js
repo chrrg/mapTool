@@ -37,7 +37,7 @@ window.mapTool=(function(){
                 +function(){
                     var  s=document.createElement("script");
                     s.setAttribute("type","text/javascript");
-                    s.setAttribute("src","http://api.map.baidu.com/getscript?type=webgl&v=1.0&ak=lUj8yDU57tpgLBXnGj11n5FCCpllxurf&services=&t=");
+                    s.setAttribute("src","http://api.map.baidu.com/getscript?type=webgl&v=1.0&ak="+ak+"&services=&t=");
                     s.onload = function(){
                         data.map = new BMapGL.Map(document.createElement("div"));
                         // data.map.addEventListener('tilesloaded', function () {
